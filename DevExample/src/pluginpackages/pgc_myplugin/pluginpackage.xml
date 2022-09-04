@@ -1,0 +1,8 @@
+<pluginpackage uniquename="pgc_myplugin">
+  <iscustomizable>1</iscustomizable>
+  <name>pgc_myplugin</name>
+  <package mimetype="application/octet-stream">pgc_myplugin.nupkg</package>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <version>1.0.0</version>
+</pluginpackage>
