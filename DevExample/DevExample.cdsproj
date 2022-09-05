@@ -14,6 +14,23 @@
     <TargetFramework>net462</TargetFramework>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <SolutionRootPath>src</SolutionRootPath>
+    <!-- <SolutionPackageMapFilePath>$(MSBuildThisFileDirectory)Map.xml</SolutionPackageMapFilePath> -->
+
+    <!-- Additional properties that are possible, per https://xrm.al/blog/cdsproj 
+    SolutionRootPath = src - the relative path where the extracted solution artifacts can be found
+    SolutionPackageMapFilePath = 
+    OutputPath = bin\Release or bin\Debug - the path where the solution zip file will be written to
+    SolutionPackageErrorLevel = Info - Can be one of the following Off, Error, Warning, Info, Verbose
+    SolutionPackageEnableLocalization = false - Extract or merge all string resources into .resx files
+    SolutionPackagerWorkingDirectory = $(IntermediateOutputPath)
+    SolutionPackagerMetadataWorkingDirectory = $(SolutionPackagerWorkingDirectory)Metadata
+    SolutionPackagerLocalizationWorkingDirectory = $(SolutionPackagerWorkingDirectory)LocExt
+    SolutionPackageLogFilePath = $(IntermediateOutputPath)SolutionPackager.log - A path and name to a log file. If the file already exists, new logging information is appended to the file.
+    SolutionPackageZipFilePath = $(OutputPath)$(MSBuildProjectName).zip - The path and name of a solution .zip file
+    SolutionPackageDefaultLocale = en-US - Used only for PowerAppsRefreshLoc target which depends on ProcessCdsProjectReferencesOutputs
+    SolutionPackageLocalTemplate = Auto
+    -->
+
   </PropertyGroup>
 
   <!-- Solution Packager overrides, un-comment to use: SolutionPackagerType (Managed, Unmanaged, Both)
